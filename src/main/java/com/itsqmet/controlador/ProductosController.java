@@ -9,4 +9,8 @@ public class ProductosController {
     public String catalogoProductos(){
         return "productos/catalogo";
     }
+    @GetMapping("/registro-productos")
+    public String registroProductos(){
+        return "productos/registro";
+    }
 }
