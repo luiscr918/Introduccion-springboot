@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Lista de los Empleados</h1>
+    <span>Nombre:</span><span th:text="${empleado.nombre}"> </span>
+    <br>
+    <span>Email:</span><span th:text="${empleado.email}"></span>
+    <br>
+    <span>Password:</span><span th:text="${empleado.password}"></span>
+    <br>
+    <span>Fecha de Nacimiento:</span><span th:text="${empleado.fechaNacimiento}"></span>
+    <br>
+    <span>Género:</span><span th:text="${empleado.genero}"></span>
+    <br>
+    <span>Domicilio:</span><span th:text="${empleado.direccion}"></span>
+    <br>
+    <span>Estudios:</span><span th:text="${empleado.estudios}"></span>
+    <br>
+    <span>Sueldo:</span><span th:text="${empleado.sueldo}"></span>
+    <br>
+</div>
+</body>
+</html>
