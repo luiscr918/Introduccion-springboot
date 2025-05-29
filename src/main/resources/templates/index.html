@@ -92,6 +92,16 @@
         </span>
     </button>
 </div>
+<!--Carga de datos de usuario en card-->
+<div class="flex justify-center items-center m-3">
+    <div  class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Información del Empleado</h5>
+        <p th:text="${'Nombre: '+nombre+ ' '+ apellido}"class="font-normal text-gray-700 dark:text-gray-400"></p>
+        <p th:text="${'Direccion:'+direccion}" class="font-normal text-gray-700 dark:text-gray-400"></p>
+        <p th:text="${'Fecha de Nacimiento: '+fechaNac}" class="font-normal text-gray-700 dark:text-gray-400"></p>
+        <p th:text="${'Intereses: '+ intereses}" class="font-normal text-gray-700 dark:text-gray-400"></p>
+    </div>
+</div>
 <!--Footer-->
 <footer class=" rounded-lg shadow-sm m-4 bg-gray-800">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
